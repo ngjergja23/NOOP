@@ -27,6 +27,8 @@ public class AUX_CLS {
     }
 
     public static <E> void listElementList(ArrayList<E> lst){
+        //zamjeni sve sa osnovnim Object
+        //ako ne zelimo ogranicimo sa upper/lower bound
 
         if (lst.isEmpty()){
             System.out.println("List empty! ");

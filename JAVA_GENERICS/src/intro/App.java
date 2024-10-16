@@ -1,7 +1,5 @@
 package intro;
 
-import javax.swing.plaf.synth.SynthOptionPaneUI;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 
 public class App {
