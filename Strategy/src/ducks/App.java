@@ -1,16 +1,20 @@
 package ducks;
 
 public class App {
-
-    public static void main(String[] args) {
-        DuckClientSimulator client = new DuckClientSimulator();
+                                                                 //putem konstruktora
+    public static void main(String[] args) {                     //rubberduck
+        DuckClientSimulator client = new DuckClientSimulator();  //flywithrocket, mutequack
         client.startSimulation();
-
-        client.setDuck(new MallardDuck());
-        client.getDuck().setFlyable(new FlyWithWings());
+                                                                 //putem settera
+        client.setDuck(new MallardDuck());                       //mallardduck
+        client.getDuck().setFlyable(new FlyWithWings());         //flywithwings, quackloud
         client.getDuck().setQuackable(new QuackLoud());
         client.startSimulation();
 
+        client.setDuck(new WoodDuck());
+        client.getDuck().setFlyable(new NoFly());
+        client.getDuck().setQuackable(new QuackLoud());
+        client.startSimulation();
     }
 
 }
