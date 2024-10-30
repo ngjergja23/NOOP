@@ -105,26 +105,24 @@ public class FormPanel extends JPanel {
 
     public void activateFormPanel(){
 
-        confirm.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                System.out.println("Test for btn activation");
-                double f = Double.parseDouble(fstNumField.getText());
-                double s = Double.parseDouble(sndNumField.getText());
-                Operation operationStrategy = (Operation) operationBox.getSelectedItem();
-                double r = operationStrategy.calculate(f,s);
-                result.setText(String.valueOf(r));
+        confirm.addActionListener(e -> {
 
-                CalculationFormData formRecord = new CalculationFormData(f, s, r, operationStrategy);
+            System.out.println("Test for btn activation");
+            double f = Double.parseDouble(fstNumField.getText());
+            double s = Double.parseDouble(sndNumField.getText());
+            Operation operationStrategy = (Operation) operationBox.getSelectedItem();
+            double r = operationStrategy.calculate(f,s);
+            result.setText(String.valueOf(r));
+
+            CalculationFormData formRecord = new CalculationFormData(f, s, r, operationStrategy);
 //                viewPanel.addTextToViewPanel(formRecord);
 
-                if (formPaneListener != null){
-                    formPaneListener.formPanelEventOccurred(formRecord);  //ovako bi trebalo
+            if (formPaneListener != null){
+                formPaneListener.formPanelEventOccurred(formRecord);  //ovako bi trebalo
 
-                    resetForm();
-                }
-
+                resetForm();
             }
+
         });
 
     }

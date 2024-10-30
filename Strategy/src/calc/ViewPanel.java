@@ -14,12 +14,18 @@ public class ViewPanel extends JPanel {
         setLayout(new BorderLayout());
         add(scrollPane, BorderLayout.CENTER);
 
-
     }
 
     public void addTextToViewPanel(CalculationFormData formRecord) {
-
         textArea.append(formRecord + "\n");
-
     }
+
+    public void addTextToViewPanel(String dataTxt){
+        textArea.append(dataTxt + "\n");
+    }
+
+    public void clearViewPanel(){
+        textArea.setText("");
+    }
+
 }

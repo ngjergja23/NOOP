@@ -11,15 +11,20 @@ public class ToolBar extends JPanel implements ActionListener {
     private JButton saveAsObj;
     private JButton loadTxt;
     private JButton loadObj;
-    private JButton claerAll;
+    private JButton clearAll;
+    private ToolbarListener toolbarListener;
 
 
     public ToolBar() {
         initComps();
         layoutComps();
         activateToolBar();
+
     }
 
+    public void setToolbarListener(ToolbarListener toolbarListener) {
+        this.toolbarListener = toolbarListener;
+    }
 
     private void initComps() {
 
@@ -27,7 +32,7 @@ public class ToolBar extends JPanel implements ActionListener {
         this.saveAsObj = new JButton("Save bin");
         this.loadTxt = new JButton("Load txt");
         this.loadObj = new JButton("Load bin");
-        this.claerAll = new JButton("Clear all");
+        this.clearAll = new JButton("Clear all");
 
     }
 
@@ -38,7 +43,7 @@ public class ToolBar extends JPanel implements ActionListener {
         add(saveAsObj);
         add(loadTxt);
         add(loadObj);
-        add(claerAll);
+        add(clearAll);
 
     }
 
@@ -52,16 +57,42 @@ public class ToolBar extends JPanel implements ActionListener {
         loadTxt.setActionCommand("Load TXT");
         loadObj.addActionListener(this);
         loadObj.setActionCommand("Load BIN");
-        claerAll.addActionListener(this);
-        claerAll.setActionCommand("Clear all");
+        clearAll.addActionListener(this);
+        clearAll.setActionCommand("Clear all");
 
     }
 
 
     @Override
-    public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent ae) {
 
+        if (ae.getSource() == saveAsTxt){   //koji botun
+            System.out.println("Clicked " + saveAsTxt.getActionCommand());
+            if (toolbarListener != null){
+                toolbarListener.toolbarEventOccurred(saveAsTxt.getActionCommand());
+            }
+        }
+//        if (ae.getSource() == saveAsObj){
+//            System.out.println("Clicked " + saveAsObj.getActionCommand());
+//        }
+        if (ae.getSource() == loadTxt){
+            System.out.println("Clicked " + loadTxt.getActionCommand());
+            if (toolbarListener != null){
+                toolbarListener.toolbarEventOccurred((loadTxt.getActionCommand()));
+            }
+        }
+//        if (ae.getSource() == loadObj){
+//            System.out.println("Clicked " + loadObj.getActionCommand());
+//        }
+        if (ae.getSource() == clearAll){
+            System.out.println("Clicked " + clearAll.getActionCommand());
+            if (toolbarListener != null){
+                toolbarListener.toolbarEventOccurred((clearAll.getActionCommand()));
+            }
+        }
 
 
     }
+
+
 }

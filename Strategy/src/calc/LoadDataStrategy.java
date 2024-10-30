@@ -1,7 +1,9 @@
 package calc;
 
-public interface LoadDataStrategy {
+import java.util.List;
 
-    void loadDataFromFile();
+public interface LoadDataStrategy<E> {
+
+    List<E> loadDataFromFile(String filePath);
 
 }
