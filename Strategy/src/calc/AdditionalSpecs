@@ -1,0 +1,6 @@
+1. Realizirati strategiju za spremanje objekata klase CalculationFormData - Save OBJ
+2. Realizirati strategiju za čitanje objekata klase CalculationFormData - Load OBJ (osigurati serijalizaciju objekata)
+3. "Hard coded" filePath zamijeniti s JFileChooser (di god je save ili load) -> default folder "DATA" unutar glavnog modula "NOOP" (paziti na relativno adresiranje)
+4. Čitanje (bilo čega) riješiti na način da se prvo trenutni podaci (ako ih ima) spreme u neku datoteku (trebat ce jos jedna lista) (ako lista nije prazna spremiti u neku drugu txt ili bin) i tek onda napraviti učitavanje
+5. Osigurati provjere unosa - s pripadnim porukama JOptionPane dijaloga
+6. Obavezno ispravno primijeniti upravljanje iznimkama
