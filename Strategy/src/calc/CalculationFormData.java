@@ -1,6 +1,6 @@
 package calc;
 
-public record CalculationFormData(double fst, double snd, double res, Operation operationStrategy) {
+public record CalculationFormData(double fst, double snd, double res, Operation operationStrategy){
 
     @Override
     public String toString() {
