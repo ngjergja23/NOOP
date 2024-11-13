@@ -20,8 +20,8 @@ public class TestApp {
         Enumeration enumString = new StringTokenizer("String tokenizer");
 //        AdapterEnumeration<String> adapter = new AdapterEnumeration<>(new StringTokenizer()){
 
-        AdapterEnumeration<String> adapterEnumeration = new AdapterEnumeration<String>(enumString);
-        Client<String> client2 = new Client<>(adapterEnumeration);  //  <---
+        AdapterEnumeration<String> adapter = new AdapterEnumeration<String>(enumString);
+        Client<String> client2 = new Client<>(adapter);  //  <---
 
         client2.someInfo();
 

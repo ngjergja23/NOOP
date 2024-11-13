@@ -25,7 +25,7 @@ public class AdapterEnumeration<E> implements Iterator<E> {
     public void remove() {
         System.out.println("Does not support this method!");
         System.out.println("Using 'asIterator' method might not be supported on some older versions!");
-        enumer.asIterator().remove();
+        //enumer.asIterator().remove();
     }
 
 }

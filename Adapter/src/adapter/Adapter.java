@@ -2,7 +2,6 @@ package adapter;
 
 public class Adapter implements ComicReader{
 
-
     private BookReader bookReader;
 
     public Adapter(BookReader bookReader) {

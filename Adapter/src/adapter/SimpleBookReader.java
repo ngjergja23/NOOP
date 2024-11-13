@@ -11,7 +11,7 @@ public class SimpleBookReader implements BookReader{
 
 
     public SimpleBookReader(Book book) {
-        System.out.println("Ready to read books...\n Please provide some comics: ");
+        System.out.println("Ready to read books...\n Please provide some books: ");
         this.book = book;
     }
 
