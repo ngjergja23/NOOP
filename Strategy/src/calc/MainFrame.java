@@ -5,7 +5,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainFrame extends JFrame {
+public class  MainFrame extends JFrame {
 
     private FormPanel formPanel;
     private ViewPanel viewPanel;
@@ -31,9 +31,8 @@ public class MainFrame extends JFrame {
     }
 
     private void initComps() {
-        viewPanel = new ViewPanel();  //formPanel = new FormPanel(viewPanel);
-        formPanel = new FormPanel();  //krivo form panel i view panel are tight coupled -> ne valja
-                                      //form panel mora bit nezavisan o view panelu
+        viewPanel = new ViewPanel();
+        formPanel = new FormPanel();
         toolBar = new ToolBar();
     }
 

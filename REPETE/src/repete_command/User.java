@@ -1,3 +1,5 @@
+package repete_command;
+
 public class User {
      private String userName;
      private int id;
@@ -10,7 +12,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "repete_command.User{" +
                 "userName='" + userName + '\'' +
                 ", id=" + id +
                 '}';
