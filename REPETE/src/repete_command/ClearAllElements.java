@@ -1,5 +1,6 @@
+package repete_command;
+
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class ClearAllElements<E> implements CommandOnList<E>{
 

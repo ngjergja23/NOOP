@@ -1,3 +1,5 @@
+package repete_command;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -28,7 +30,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
+        return "repete_command.Car{" +
                 "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 ", dateTimeFormatter=" + dateTimeFormatter +

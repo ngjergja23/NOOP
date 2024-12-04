@@ -16,7 +16,6 @@ public class FormPanel extends JPanel {
     private JButton confirm;
 
     private FormPaneListener formPaneListener;
-//    private ViewPanel viewPanel; //pr //prvo brisemo viewPanel
 
     public FormPanel() {
 
@@ -27,14 +26,15 @@ public class FormPanel extends JPanel {
         Border inner = BorderFactory.createTitledBorder("Calculation panel: ");
         Border border = BorderFactory.createCompoundBorder(outer, inner);
 
-        //
-//        this.viewPanel = viewPanel;
-        //
         setBorder(border);
 
         initComps();
         layoutComps();
         activateFormPanel();
+    }
+
+    public void setFormPaneListener(FormPaneListener formPaneListener) {
+        this.formPaneListener = formPaneListener;
     }
 
     public void initComps(){
@@ -53,10 +53,6 @@ public class FormPanel extends JPanel {
 
         confirm = new JButton("Calculate");
 
-    }
-
-    public void setFormPaneListener(FormPaneListener formPaneListener) {
-        this.formPaneListener = formPaneListener;
     }
 
     public void layoutComps(){
@@ -90,7 +86,7 @@ public class FormPanel extends JPanel {
 
         gbc.gridx = 0;
         gbc.gridy++;
-        add(Box.createVerticalStrut(10));
+        add(Box.createVerticalStrut(10), gbc);
 
         gbc.gridy++;
         add(confirm, gbc);

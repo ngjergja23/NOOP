@@ -4,10 +4,11 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Adapter/Adapter.iml" filepath="$PROJECT_DIR$/Adapter/Adapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/Command/Command.iml" filepath="$PROJECT_DIR$/Command/Command.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Decorator/Decorator.iml" filepath="$PROJECT_DIR$/Decorator/Decorator.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVA_GENERICS/JAVA_GENERICS.iml" filepath="$PROJECT_DIR$/JAVA_GENERICS/JAVA_GENERICS.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/NOOP.iml" filepath="$PROJECT_DIR$/.idea/NOOP.iml" />
       <module fileurl="file://$PROJECT_DIR$/Observer/Observer.iml" filepath="$PROJECT_DIR$/Observer/Observer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/REPETE Command/REPETE Command.iml" filepath="$PROJECT_DIR$/REPETE Command/REPETE Command.iml" />
+      <module fileurl="file://$PROJECT_DIR$/REPETE/REPETE.iml" filepath="$PROJECT_DIR$/REPETE/REPETE.iml" />
       <module fileurl="file://$PROJECT_DIR$/Strategy/Strategy.iml" filepath="$PROJECT_DIR$/Strategy/Strategy.iml" />
     </modules>
   </component>

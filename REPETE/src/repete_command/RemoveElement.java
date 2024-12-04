@@ -1,3 +1,5 @@
+package repete_command;
+
 import java.util.ArrayList;
 
 public class RemoveElement<E> implements CommandOnList{

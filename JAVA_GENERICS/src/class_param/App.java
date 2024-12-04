@@ -9,6 +9,10 @@ public class App {
         stringPackage.addNewElement("Novi2");
         stringPackage.listContent();
 
+        Package<Integer> intPackage = new Package<>(Integer.class);
+        intPackage.addNewElement(1);
+        intPackage.addNewElement(2);
+        intPackage.listContent();
 
     }
 
